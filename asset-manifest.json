@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/FreeTime/static/css/main.6c4eeee7.chunk.css",
-    "main.js": "/FreeTime/static/js/main.ab7dbd16.chunk.js",
-    "main.js.map": "/FreeTime/static/js/main.ab7dbd16.chunk.js.map",
+    "main.css": "/FreeTime/static/css/main.36f095f7.chunk.css",
+    "main.js": "/FreeTime/static/js/main.719b99bd.chunk.js",
+    "main.js.map": "/FreeTime/static/js/main.719b99bd.chunk.js.map",
     "runtime-main.js": "/FreeTime/static/js/runtime-main.92e2c287.js",
     "runtime-main.js.map": "/FreeTime/static/js/runtime-main.92e2c287.js.map",
-    "static/js/2.a10387ab.chunk.js": "/FreeTime/static/js/2.a10387ab.chunk.js",
-    "static/js/2.a10387ab.chunk.js.map": "/FreeTime/static/js/2.a10387ab.chunk.js.map",
+    "static/js/2.881bab40.chunk.js": "/FreeTime/static/js/2.881bab40.chunk.js",
+    "static/js/2.881bab40.chunk.js.map": "/FreeTime/static/js/2.881bab40.chunk.js.map",
     "index.html": "/FreeTime/index.html",
-    "static/css/main.6c4eeee7.chunk.css.map": "/FreeTime/static/css/main.6c4eeee7.chunk.css.map",
-    "static/js/2.a10387ab.chunk.js.LICENSE.txt": "/FreeTime/static/js/2.a10387ab.chunk.js.LICENSE.txt"
+    "static/css/main.36f095f7.chunk.css.map": "/FreeTime/static/css/main.36f095f7.chunk.css.map",
+    "static/js/2.881bab40.chunk.js.LICENSE.txt": "/FreeTime/static/js/2.881bab40.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.92e2c287.js",
-    "static/js/2.a10387ab.chunk.js",
-    "static/css/main.6c4eeee7.chunk.css",
-    "static/js/main.ab7dbd16.chunk.js"
+    "static/js/2.881bab40.chunk.js",
+    "static/css/main.36f095f7.chunk.css",
+    "static/js/main.719b99bd.chunk.js"
   ]
 }
