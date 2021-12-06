@@ -26,7 +26,7 @@ const [valueEnd, setValuesEnd] = useState('00:00');
         value={valueEnd}
       /> </div>
   
-        <div> FreeTime is {valueaStart} to {valueEnd}</div>
+        <div> FreeTime in {day} is {valueaStart} to {valueEnd}</div>
   </div>
     )
 }
