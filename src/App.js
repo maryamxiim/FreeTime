@@ -3,6 +3,7 @@ import React, {useState} from "react";
 // import TimePicker from "react-time-picker";
 // import Time from "./component/Time";
 import "./App.css"
+import Time from "./component/Time";
 
 
 
@@ -10,39 +11,34 @@ import "./App.css"
 
 
 function App() {
-const [valueaStart, setValueStart] = useState('00:00');
-const [valueEnd, setValuesEnd] = useState('00:00');
+
+function myFunction() {
+  // let text;
+  let Input = prompt("Please enter your name:", "MaryamXim");
+
+  
+  // if (person == null || person == "") {
+  //   text = "User cancelled the prompt.";
+  // } else {
+  //   text = "Hello " + person + "! How are you today?";
+  // }
+}
 
   return (
     <div className="App">
       <div className="App-header">
-      <div className="total">
-      <div>Saturday</div>
- <div><input
-      type="time"
-      onChange={ev => setValueStart(ev.target.value)}
-      min="00:00"
-      max="23:59"
-      step="60"
-      value={valueaStart}
-    />
-     To 
-     <input
-      type="time"
-      onChange={ev => setValuesEnd(ev.target.value)}
-      min="00:00"
-      max="23:59"
-      step="60"
-      value={valueEnd}
-    /> </div>
+     <Time day={"Saturday"}/>
+     <Time day={"Sunday"}/>
+     <Time day={"Monday"}/>
+     <Time day={"Tuesday"}/>
+     <Time day={"Wednesday"}/>
+     <Time day={"Thursday"}/>
+     <Time day={"Friday"}/>
 
-      <div> FreeTime is {valueaStart} to {valueEnd}</div>
-</div>
-{/* 
  <div className="buttons">
   <button>Cancel</button>
-<button> Save scheduler </button>
-</div> */}
+<button onClick={myFunction}> Save scheduler </button>
+</div>
 
       </div>
     </div>
