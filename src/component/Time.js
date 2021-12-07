@@ -1,35 +1,36 @@
-import React,{useState} from "react";
+import React from "react";
 import "./time.css"
 
-function Time({day}) {
-    const [valueaStart, setValueStart] = useState('00:00');
-const [valueEnd, setValuesEnd] = useState('00:00');
+function Time({day , valueStart, valueEnd,onChangeValueStart, onChangeValueEnd}) {
+   
+
     return(
 
         <div className="total">
         <div>{day}</div>
    <div><input
         type="time"
-        onChange={ev => setValueStart(ev.target.value)}
+        onChange={onChangeValueStart}
         min="00:00"
         max="23:59"
         step="60"
-        value={valueaStart}
+        value={valueStart}
       />
+      &nbsp;
        To 
+       &nbsp;
        <input
         type="time"
-        onChange={ev => setValuesEnd(ev.target.value)}
+        onChange={onChangeValueEnd}
         min="00:00"
         max="23:59"
         step="60"
         value={valueEnd}
       /> </div>
-  
-        <div> FreeTime in {day} is {valueaStart} to {valueEnd}</div>
-  </div>
+    </div>
     )
 }
+
 
 
 export default Time;
