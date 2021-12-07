@@ -4,7 +4,6 @@ import Time from "./component/Time";
 
 
 
-
 function App() {
 
 const [valueStart , setvalueStart] = useState(["00:00", "00:00", "00:00","00:00", "00:00","00:00","00:00" ])
@@ -37,8 +36,8 @@ function ShowList() {
 }
 
 function Delete(){
-  setvalueStart("00:00");
-  setvalueEnd("00:00");
+  setvalueStart(["00:00", "00:00", "00:00","00:00", "00:00","00:00","00:00","00:00"]);
+  setvalueEnd(["00:00", "00:00", "00:00","00:00", "00:00","00:00","00:00","00:00"]);
       // window.localStorage.clear()
       // window.location.reload()
 }
@@ -71,16 +70,16 @@ function Delete(){
       valueEnd={valueEnd[4]}
       onChangeValueStart={ev => UpdateChangeStart(ev.target.value,4)}
       onChangeValueEnd= {ev => UpdateChangeEnd(ev.target.value,4)}/>
-     <Time day={day[5]}
+      <Time day={day[5]}
       valueStart={valueStart[5]}
       valueEnd={valueEnd[5]}
       onChangeValueStart={ev => UpdateChangeStart(ev.target.value,5)}
       onChangeValueEnd= {ev => UpdateChangeEnd(ev.target.value,5)}/>
-     <Time day={day[6]}
+      <Time day={day[6]}
       valueStart={valueStart[6]}
       valueEnd={valueEnd[6]}
       onChangeValueStart={ev => UpdateChangeStart(ev.target.value,6)}
-      onChangeValueEnd= {ev => UpdateChangeEnd(ev.target.value,6)}/>
+      onChangeValueEnd= {ev => UpdateChangeEnd(ev.target.value,6)} />
 
  <div className="buttons">
   <button onClick={Delete}>Cancel</button>
