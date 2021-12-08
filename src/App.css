@@ -1,19 +1,16 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .App {
   width: 100%;
-  height: 100vh;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* 
-.total {
-  width: 600px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-} */
+
 .buttons {
   display: flex;
   justify-content: right;
@@ -22,4 +19,54 @@
 
 .buttons > button {
   margin-left: 10px;
+}
+
+.Total > div {
+  width: 400px;
+  font-size: medium;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.Header {
+  font-size: x-large !important;
+}
+
+.Caption {
+  margin-bottom: 25px !important;
+}
+
+.Totalss {
+  width: 400px;
+  justify-content: center;
+  padding: 20px;
+  border: 5px solid rgb(168, 87, 168);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+button {
+  border-radius: 5px;
+  border: 2px solid rgb(168, 87, 168);
+  color: rgb(133, 66, 133);
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+input[type="time"] {
+  border: 2px solid rgb(197, 148, 207);
+  padding: 5px;
+  border-radius: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+input[type="time"]:focus {
+  outline: none;
 }

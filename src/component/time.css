@@ -1,15 +1,6 @@
 .total {
   width: 400px;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
-
-/* input[type="time"] {
-  border: none;
-  color: #2a2c2d;
-  font-size: 14px;
-  font-family: helvetica;
-  width: 180px;
-} */
