@@ -1,7 +1,7 @@
-import React from "react";
-import "./time.css";
+import React from 'react';
+import './time.css';
 
-function Time({
+const Time = function ({
   day,
   valueStart,
   valueEnd,
@@ -28,10 +28,11 @@ function Time({
           max="23:59"
           step="60"
           value={valueEnd}
-        />{" "}
+        />
+        {' '}
       </div>
     </div>
   );
-}
+};
 
 export default Time;
