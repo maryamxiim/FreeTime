@@ -1,0 +1,38 @@
+.maryamzim {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0px;
+}
+
+.daysofss {
+  justify-self: start;
+}
+.daysof {
+  height: 40vh;
+  /* width: 70vh; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .heeey {
+  display: flex;
+  flex-direction: row;
+} */
+
+.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.daysofss {
+  height: 40vh;
+  /* width: 70vh; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 40px;
+}

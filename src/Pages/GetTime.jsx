@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 import Time from '../component/Time';
 
 // eslint-disable-next-line func-names
@@ -32,6 +32,10 @@ const App = function () {
     'Thursday',
     'Friday',
   ];
+  localStorage.setItem('valueStart', JSON.stringify(valueStart));
+  localStorage.setItem('valueEnd', JSON.stringify(valueEnd));
+  localStorage.setItem('day', JSON.stringify(day));
+  // console.log(hello);
 
   function UpdateChangeStart(value, xid) {
     const x = [...valueStart];
@@ -45,40 +49,40 @@ const App = function () {
     setvalueEnd(y);
   }
 
-  function ShowList() {
-    swal('Please inter your name:', {
-      content: 'input',
-    }).then((value) => {
-      swal(
-        `${
-          // eslint-disable-next-line no-useless-concat
-          'Hi' + ' ' + `${value} ` + '\n' + 'These are your FreeTimes:' + '\n'
-        }${JSON.stringify(day[0])}: `
-          + ' From '
-          + `From${JSON.stringify(valueStart[0])} To ${JSON.stringify(
-            valueEnd[0],
-          )}\n${JSON.stringify(day[1])}: `
-          + ` From ${JSON.stringify(valueStart[1])} To ${JSON.stringify(
-            valueEnd[1],
-          )}\n${JSON.stringify(day[2])}: `
-          + ` From ${JSON.stringify(valueStart[2])} To ${JSON.stringify(
-            valueEnd[2],
-          )}\n${JSON.stringify(day[3])}: `
-          + ` From ${JSON.stringify(valueStart[3])} To ${JSON.stringify(
-            valueEnd[3],
-          )}\n${JSON.stringify(day[4])}: `
-          + ` From ${JSON.stringify(valueStart[4])} To ${JSON.stringify(
-            valueEnd[4],
-          )}\n${JSON.stringify(day[5])}: `
-          + ` From ${JSON.stringify(valueStart[5])} To ${JSON.stringify(
-            valueEnd[5],
-          )}\n${JSON.stringify(day[6])}: `
-          + ` From ${JSON.stringify(valueStart[6])} To ${JSON.stringify(
-            valueEnd[6],
-          )}\n`,
-      );
-    });
-  }
+  // function ShowList() {
+  //   swal('Please inter your name:', {
+  //     content: 'input',
+  //   }).then((value) => {
+  //     swal(
+  //       `${
+  //         // eslint-disable-next-line no-useless-concat
+  //         'Hi' + ' ' + `${value} ` + '\n' + 'These are your FreeTimes:' + '\n'
+  //       }${JSON.stringify(day[0])}: `
+  //         + ' From '
+  //         + `From${JSON.stringify(valueStart[0])} To ${JSON.stringify(
+  //           valueEnd[0],
+  //         )}\n${JSON.stringify(day[1])}: `
+  //         + ` From ${JSON.stringify(valueStart[1])} To ${JSON.stringify(
+  //           valueEnd[1],
+  //         )}\n${JSON.stringify(day[2])}: `
+  //         + ` From ${JSON.stringify(valueStart[2])} To ${JSON.stringify(
+  //           valueEnd[2],
+  //         )}\n${JSON.stringify(day[3])}: `
+  //         + ` From ${JSON.stringify(valueStart[3])} To ${JSON.stringify(
+  //           valueEnd[3],
+  //         )}\n${JSON.stringify(day[4])}: `
+  //         + ` From ${JSON.stringify(valueStart[4])} To ${JSON.stringify(
+  //           valueEnd[4],
+  //         )}\n${JSON.stringify(day[5])}: `
+  //         + ` From ${JSON.stringify(valueStart[5])} To ${JSON.stringify(
+  //           valueEnd[5],
+  //         )}\n${JSON.stringify(day[6])}: `
+  //         + ` From ${JSON.stringify(valueStart[6])} To ${JSON.stringify(
+  //           valueEnd[6],
+  //         )}\n`,
+  //     );
+  //   });
+  // }
 
   function Delete() {
     setvalueStart([
@@ -129,12 +133,16 @@ const App = function () {
               <button type="button" onClick={Delete}>
                 Cancel
               </button>
-              <button type="button" onClick={ShowList}>
-                {' '}
-                Save scheduler
-                {' '}
-              </button>
+              <a href="/FreeTime/resualt">
+                <button type="button">
+                  {' '}
+                  Save scheduler
+                  {' '}
+                </button>
+              </a>
+
             </div>
+
           </div>
         </div>
       </div>
