@@ -1,5 +1,5 @@
 {
-  "homepage": "https://maryamxiim.github.io/FreeTime/",
+  "homepage": "https://maryamxiim.github.io/FreeTime/ && cp build/index.html build/404.html",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
