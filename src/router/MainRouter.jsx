@@ -12,9 +12,9 @@ const MainRouter = function () {
   return (
     <Router>
       <Routes>
-        <Route path="/FreeTime" element={<FisrtName />} />
-        <Route path="/FreeTime/showList" element={<GetTime />} />
-        <Route path="/FreeTime/resualt" element={<ShowList />} />
+        <Route path="/FreeTime" exact element={<FisrtName />} />
+        <Route path="/FreeTime/showList" exact element={<GetTime />} />
+        <Route path="/FreeTime/resualt" exact element={<ShowList />} />
 
       </Routes>
     </Router>
